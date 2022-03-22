@@ -1,4 +1,3 @@
-import FeedbackData from "../data/FeedbackData";
 import React from "react";
 import { useState } from "react";
 import Card from "./shared/Card";
@@ -10,8 +9,6 @@ import FeedbackContext from "../context/FeedbackContext";
 function FeedbackItem({ item }) {
   const { deleteFeedback, editFeedback } = useContext(FeedbackContext);
 
-  const [rating, setRating] = useState(7);
-  const [text, setText] = useState("This is an example of feedback item");
 
   return (
     <Card>
